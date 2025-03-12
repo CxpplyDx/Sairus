@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sairus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlaza tu archivo CSS -->
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="main-nav">
+      <div class="logo">
+        <img src="Imagenes/Logo.png" alt="Sairus">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">PRODUCTOS</a></li>
+          <li><a href="#">GUÍAS</a></li>
+          <li><a href="#">SOFTWARE</a></li>
+          <li><a href="#">SOPORTE</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="#" title="Buscar">
+          <img src="Imagenes/Buscar.png" alt="Buscar" class="icon-img">
+        </a>
+        <a href="#" title="Carrito">
+          <img src="Imagenes/Carrito.png" alt="Carrito" class="icon-img">
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- MAIN -->
+  <main>
+    <!-- Sección HERO (con slider de fondos) -->
+    <section class="hero">
+      <!-- Contenedor del slider con 3 fondos -->
+      <div class="hero-slider">
+        <div class="slide active" style="background-image: url('Imagenes/FondoPrincipal.jpg');"></div>
+        <div class="slide" style="background-image: url('Imagenes/Fondo2.jpg');"></div>
+        <div class="slide" style="background-image: url('Imagenes/Fondo3.jpg');"></div>
+      </div>
+      
+      <!-- Texto centrado (aprox) -->
+      <div class="hero-text">
+        <h1>¿ESTÁ PREPARADO PARA LA SERIE 50?</h1>
+      </div>
+      
+      <!-- Botón más abajo -->
+      <div class="hero-button">
+        <a href="#" class="info-btn">MÁS INFORMACIÓN</a>
+      </div>
+      
+      <!-- Menú de pestañas al fondo de la sección -->
+      <div class="tabs-menu">
+        <button class="tab-link active" data-tab="categorias">Categorías de producto</button>
+        <button class="tab-link" data-tab="destacados">Productos destacados</button>
+      </div>
+    </section>
+    
+    <!-- Sección TABS -->
+    <section class="tabs-wrapper">
+      <div class="tabs-content-wrapper">
+        <div class="tab-content" id="categorias">
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="Imagenes/Teclados.jpg" alt="Teclados para juegos" class="category-img">
+              <h3>TECLADOS PARA JUEGOS</h3>
+              <a href="#" class="category-link">COMPRAR AHORA &gt;</a>
+            </div>
+            <div class="category-card">
+              <img src="Imagenes/Computadora.jpg" alt="PC para juegos" class="category-img">
+              <h3>PC PARA JUEGOS</h3>
+              <a href="#" class="category-link">COMPRAR AHORA &gt;</a>
+            </div>
+            <div class="category-card">
+              <img src="Imagenes/Memorias.jpg" alt="Memoria" class="category-img">
+              <h3>MEMORIA</h3>
+              <a href="#" class="category-link">COMPRAR AHORA &gt;</a>
+            </div>
+            <div class="category-card">
+              <img src="Imagenes/FuentesDePoder.jpg" alt="Fuentes de poder" class="category-img">
+              <h3>FUENTES DE PODER</h3>
+              <a href="#" class="category-link">COMPRAR AHORA &gt;</a>
+            </div>
+            <div class="category-card">
+              <img src="Imagenes/Audifonos.jpg" alt="Auriculares gaming" class="category-img">
+              <h3>AURICULARES GAMING</h3>
+              <a href="#" class="category-link">COMPRAR AHORA &gt;</a>
+            </div>
+            <div class="category-card">
+              <img src="Imagenes/Monitores.jpg" alt="Monitores" class="category-img">
+              <h3>MONITORES</h3>
+              <a href="#" class="category-link">COMPRAR AHORA &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="destacados">
+          <p>Aquí irían tus productos destacados, sus descripciones, etc.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección GUIAS -->
+    <section class="guides-section">
+      <h2 class="guides-title">GUÍAS, CONSEJOS Y TRUCOS</h2>
+      <div class="guides-nav">
+        <button class="guide-tab-link active" data-tab="destacados">ARTÍCULOS DESTACADOS</button>
+        <button class="guide-tab-link" data-tab="recientes">ARTÍCULOS MÁS RECIENTES</button>
+      </div>
+      <div class="guides-tabs-wrapper">
+        <div class="guides-tabs-content-wrapper">
+          <div class="guide-tab-content" id="destacados">
+            <div class="articles-container">
+              <div class="article-card">
+                <a href="articulo1.html" class="article-link">
+                  <img src="Imagenes/Rtx.jpeg" alt="GPU RTX" class="article-img">
+                  <div class="article-info">
+                    <span class="article-category">BLOG</span>
+                    <h3>GPUs RTX series 5090, 5080 y 5070</h3>
+                    <p>Todo lo que necesitas saber.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="article-card">
+                <a href="articulo2.html" class="article-link">
+                  <img src="Imagenes/rtxs.jpeg" alt="Comparación RTX" class="article-img">
+                  <div class="article-info">
+                    <span class="article-category">BLOG</span>
+                    <h3>RTX 5090 vs 5080 vs 5070</h3>
+                    <p>Diferencias explicadas para guiar tu compra.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="article-card">
+                <a href="articulo3.html" class="article-link">
+                  <img src="Imagenes/poder.webp" alt="Fuente de alimentación" class="article-img">
+                  <div class="article-info">
+                    <span class="article-category">BLOG</span>
+                    <h3>Mejor fuente de alimentación</h3>
+                    <p>Recomendaciones para la RTX 5090.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="guide-tab-content" id="recientes">
+            <div class="articles-container">
+              <div class="article-card">
+                <a href="articulo4.html" class="article-link">
+                  <img src="Imagenes/Refrigeracion.jpeg" alt="Enfriamiento por aire" class="article-img">
+                  <div class="article-info">
+                    <span class="article-category">BLOG</span>
+                    <h3>Enfriamiento por aire vs líquido</h3>
+                    <p>¿Cuál es la mejor opción para tu nueva GPU?</p>
+                  </div>
+                </a>
+              </div>
+              <div class="article-card">
+                <a href="articulo5.html" class="article-link">
+                  <img src="Imagenes/Gpu.jpeg" alt="Overclock" class="article-img">
+                  <div class="article-info">
+                    <span class="article-category">BLOG</span>
+                    <h3>Overclock en GPUs de última generación</h3>
+                    <p>¿Cuánto rendimiento extra puedes ganar?</p>
+                  </div>
+                </a>
+              </div>
+              <div class="article-card">
+                <a href="articulo6.html" class="article-link">
+                  <img src="Imagenes/Mantenimiento.jpeg" alt="Mantenimiento PC" class="article-img">
+                  <div class="article-info">
+                    <span class="article-category">BLOG</span>
+                    <h3>Mantenimiento preventivo</h3>
+                    <p>Alarga la vida de tu tarjeta gráfica y componentes.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección Integrada: Producto Destacado -->
+    <section class="featured-product-section">
+      <div class="container">
+        <!-- Producto Principal -->
+        <div class="main-product">
+          <img src="Imagenes/Icue.jpeg" alt="Producto Destacado">
+          <h2>Producto Destacado</h2>
+          <p>Descripción breve del producto, características principales, etc.</p>
+          <a href="#">Más información</a>
+        </div>
+        <!-- Otros Productos -->
+        <div class="other-products">
+          <div class="product-box">
+            <img src="Imagenes/Hydrox.jpeg" alt="Hydro X Series">
+            <div class="product-box-text">
+              <h3>Hydro X Series</h3>
+              <p>Descripción corta del producto.</p>
+              <a href="#">Comprar Ahora</a>
+            </div>
+          </div>
+          <div class="product-box">
+            <img src="Imagenes/Builder.jpeg" alt="Corsair PC Builder">
+            <div class="product-box-text">
+              <h3>Corsair PC Builder</h3>
+              <p>Planifica tu PC con componentes Corsair.</p>
+              <a href="#">Planes de diseño</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección POR QUÉ COMPRAR DIRECTAMENTE A CORSAIR -->
+    <section class="why-corsair">
+      <h2>¿POR QUÉ COMPRAR DIRECTAMENTE A CORSAIR?</h2>
+      <div class="why-features">
+        <a href="productos-exclusivos.html" class="feature-item">
+          <div class="icon-box">
+            <img src="Imagenes/accesorios.png" alt="Productos y sets exclusivos">
+          </div>
+          <p>PRODUCTOS Y SETS EXCLUSIVOS</p>
+        </a>
+        <a href="envio-rapido.html" class="feature-item">
+          <div class="icon-box">
+            <img src="Imagenes/Envio.png" alt="Envío rápido">
+          </div>
+          <p>ENVÍO RÁPIDO AL DÍA SIGUIENTE</p>
+        </a>
+        <a href="chat-en-vivo.html" class="feature-item">
+          <div class="icon-box">
+            <img src="Imagenes/Envivo.png" alt="Chat en vivo">
+          </div>
+          <p>CHAT EN VIVO CON ESPECIALISTAS EN PRODUCTOS</p>
+        </a>
+        <a href="devoluciones.html" class="feature-item">
+          <div class="icon-box">
+            <img src="Imagenes/Devolucion.png" alt="Devoluciones sin riesgo">
+          </div>
+          <p>60 DÍAS DE DEVOLUCIONES SIN RIESGO</p>
+        </a>
+      </div>
+      <a href="#" class="why-more-info">MÁS INFORMACIÓN &gt;</a>
+    </section>
+  </main>
+  
+  <!-- Enlaza tu archivo JS -->
+  <script src="Jscorsair.js"></script>
+</body>
+</html>
